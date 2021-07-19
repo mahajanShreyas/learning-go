@@ -39,7 +39,7 @@ func insertUtil(root *node, data int) {
 	}
 }
 
-func (bst *Bst) PreOrderTraversal(){
+func (bst Bst) PreOrderTraversal(){
 	preOrderTraversalUtil(bst.root)
 }
 
