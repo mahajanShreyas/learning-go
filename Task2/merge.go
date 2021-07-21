@@ -4,6 +4,8 @@ func Merge(ll1 LinkedList, ll2 LinkedList) LinkedList {
 
 	newList := LinkedList{}
 
+	newList.Init()
+
 	temp1 := ll1.start
 	temp2 := ll2.start
 
