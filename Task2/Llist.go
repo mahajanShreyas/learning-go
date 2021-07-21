@@ -23,7 +23,6 @@ func (ll *LinkedList) Init() {
 func (ll *LinkedList) Insert(data int) {
 
 	if ll.start == nil {
-
 		ll.logger.Debug("Value inserting at root",)
 
 		ll.start = &node{data:data}
@@ -31,7 +30,8 @@ func (ll *LinkedList) Insert(data int) {
 	} else {
 
 		ll.logger.Debug("Value inserting at end",)
-
+		ll.start = &node{data:data}
+	} else {
 		temp := ll.start
 		for temp.next != nil {
 			temp = temp.next
@@ -41,10 +41,8 @@ func (ll *LinkedList) Insert(data int) {
 }
 
 func (ll *LinkedList) Traverse() {
-
 	ll.logger.Info("Printed Inorder Traversal of BST",
 			zap.String("statusCode", "success..."),)
-
 	temp := ll.start
 	for temp != nil {
 		fmt.Println(temp.data)

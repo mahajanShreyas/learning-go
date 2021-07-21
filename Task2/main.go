@@ -4,9 +4,7 @@ func main() {
 
 	ll1 := LinkedList{}
 
-
 	ll1.Init()
-
 	ll1.Insert(2)
 	ll1.Insert(3)
 	ll1.Insert(4)
@@ -16,7 +14,6 @@ func main() {
 	ll1.Traverse()
 
 	ll2 := LinkedList{}
-
 
 	ll2.Init()
 
