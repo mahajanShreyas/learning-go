@@ -3,7 +3,6 @@ package main
 func Merge(ll1 LinkedList, ll2 LinkedList) LinkedList {
 
 	newList := LinkedList{}
-
 	temp1 := ll1.start
 	temp2 := ll2.start
 
