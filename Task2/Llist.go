@@ -38,7 +38,6 @@ func (ll *LinkedList) Traverse() {
 
 	zap.L().Info("Printed Inorder Traversal of BST",
 			zap.String("statusCode", "success..."),)
-
 	temp := ll.start
 	for temp != nil {
 		fmt.Println(temp.data)
